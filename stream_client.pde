@@ -5,7 +5,7 @@ import java.util.*;
 UDPReceiver udp;
 ArrayList<String> dataLog = new ArrayList<String>(); 
 
-int saveInterval = 10 * 1000;
+int saveInterval = 60 * 1000;
 int lastSaveTime = 0;
 int lastReceivedTime = 0;
 
@@ -128,3 +128,4 @@ void saveLog() {
   println("Auto-saved: " + filename);
   dataLog.clear();  
 }
+
